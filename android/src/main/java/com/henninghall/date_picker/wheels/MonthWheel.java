@@ -22,7 +22,7 @@ public class MonthWheel extends Wheel
 
         cal.set(Calendar.MONTH, 0);
         for (int i = 0; i <= 11; ++i) {
-            values.add(getLocaleString(cal));
+            values.add(getLocaleString(cal).substring(0,1).toUpperCase()+getLocaleString(cal).substring(1));
             cal.add(Calendar.MONTH, 1);
         }
         return values;
