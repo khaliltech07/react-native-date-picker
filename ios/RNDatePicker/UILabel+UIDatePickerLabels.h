@@ -18,7 +18,7 @@
 
 - (UIFont *)labelFont
 {
-    UIFont *font = [UIFont fontWithName:@"Cairo-SemiBold" size:22];
+    UIFont *font = [UIFont fontWithName:@"Montserrat-Regular" size:22];
 
     return font;
 }
