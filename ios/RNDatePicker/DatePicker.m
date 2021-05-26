@@ -6,6 +6,7 @@
  */
 
 #import "DatePicker.h"
+#import "UILabel+UIDatePickerLabels.h"
 
 #import "RCTUtils.h"
 #import "UIView+React.h"
