@@ -343,12 +343,14 @@ public class NumberPickerView extends View  {
         mPaintText.setColor(mTextColorNormal);
         mPaintText.setAntiAlias(true);
 
-        mPaintText.setTextAlign(Align.RIGHT);
+       // mPaintText.setTextAlign(Align.RIGHT);
 
         if ("ar_DZ".equals(State.state.getLocaleLanguageTag())) {
+            mPaintText.setTextAlign(Align.RIGHT);
             Typeface typeFace =Typeface.createFromAsset(getContext().getAssets(),"myfont.ttf");
             mPaintText.setTypeface(typeFace);
         }else{
+             mPaintText.setTextAlign(Align.LEFT);
             Typeface typeFace =Typeface.createFromAsset(getContext().getAssets(),"montserrat.ttf");
             mPaintText.setTypeface(typeFace);
         }
