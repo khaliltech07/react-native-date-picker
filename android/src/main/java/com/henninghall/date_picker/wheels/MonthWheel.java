@@ -45,11 +45,9 @@ public class MonthWheel extends Wheel
 
     @Override
     public Paint.Align getTextAlign() {
-        if ("ar_DZ".equals(state.getLocaleLanguageTag())){
-        return Paint.Align.RIGHT;
-        }else {
-            return Paint.Align.LEFT;
-        }
+  
+       return Paint.Align.LEFT;
+       
     }
 
     @Override
